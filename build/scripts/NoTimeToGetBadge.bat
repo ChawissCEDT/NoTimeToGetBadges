@@ -70,7 +70,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\NoTimeToGetBadge-1-with-sources.jar;%APP_HOME%\lib\javafx-fxml-24.0.1-mac-aarch64.jar;%APP_HOME%\lib\javafx-web-24.0.1-mac-aarch64.jar;%APP_HOME%\lib\javafx-controls-24.0.1-mac-aarch64.jar;%APP_HOME%\lib\javafx-media-24.0.1-mac-aarch64.jar;%APP_HOME%\lib\javafx-swing-24.0.1-mac-aarch64.jar;%APP_HOME%\lib\javafx-graphics-24.0.1-mac-aarch64.jar;%APP_HOME%\lib\javafx-base-24.0.1-mac-aarch64.jar
+set CLASSPATH=%APP_HOME%\lib\NoTimeToGetBadge-1-with-sources.jar;%APP_HOME%\lib\javafx-fxml-24.0.1-win.jar;%APP_HOME%\lib\javafx-web-24.0.1-win.jar;%APP_HOME%\lib\javafx-controls-24.0.1-win.jar;%APP_HOME%\lib\javafx-media-24.0.1-win.jar;%APP_HOME%\lib\javafx-swing-24.0.1-win.jar;%APP_HOME%\lib\javafx-graphics-24.0.1-win.jar;%APP_HOME%\lib\javafx-base-24.0.1-win.jar
 
 
 @rem Execute NoTimeToGetBadge

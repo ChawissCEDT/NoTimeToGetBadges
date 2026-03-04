@@ -1,6 +1,6 @@
 package Screen.BuildingScreen.Restaurant;
 
-import Logic.GamePaneImage;
+import Logic.GamePane;
 import Screen.BuildingScreen.Building;
 
 /**
@@ -20,7 +20,7 @@ public class Restaurant extends Building {
      * Opens the Restaurant popup screen.
      */
     @Override
-    public void interact(GamePaneImage gamePane) {
+    public void interact(GamePane gamePane) {
         RestaurantPopup.show(gamePane);
     }
 }

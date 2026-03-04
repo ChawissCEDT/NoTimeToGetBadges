@@ -1,7 +1,7 @@
 package Screen.BuildingScreen.Dome;
 
 
-import Logic.GamePaneImage;
+import Logic.GamePane;
 import Character.BasePlayer;
 import Screen.BuildingScreen.Normal;
 import Screen.BuildingScreen.ShopItem;
@@ -75,7 +75,7 @@ public class DomePopup implements Shopable, Normal {
          * Applies the selected dormitory action to the player.
          */
         @Override
-        public void execute(GamePaneImage gamePane) {
+        public void execute(GamePane gamePane) {
             BasePlayer p = gamePane.getPlayerImage();
             if (p.getStamina() >= staminaCost) {
                 if(p.getHappiness() < 500){
@@ -96,7 +96,7 @@ public class DomePopup implements Shopable, Normal {
     /**
      * Opens the dome popup window and allows the player to sleep or relax.
      */
-    public static void show(GamePaneImage gamePane) {
+    public static void show(GamePane gamePane) {
         BasePlayer p = gamePane.getPlayerImage();
 
         DomePopup popup = new DomePopup();

@@ -1,6 +1,6 @@
 package Screen.BuildingScreen.Travel;
 
-import Logic.GamePaneImage;
+import Logic.GamePane;
 import Screen.BuildingScreen.Building;
 
 /**
@@ -20,7 +20,7 @@ public class Travel extends Building {
      * Opens the travel popup screen.
      */
     @Override
-    public void interact(GamePaneImage gamePane) {
+    public void interact(GamePane gamePane) {
         TravelPopup.show(gamePane);
     }
 }

@@ -23,7 +23,7 @@ import Character.BasePlayer;
 /**
  * this class this for setup game logic and map logic
  */
-public class GamePaneImage extends Pane {
+public class GamePane extends Pane {
 
     private MapCreate MapCreate;
     private final int TILE_SIZE = 40;
@@ -56,9 +56,9 @@ public class GamePaneImage extends Pane {
             {1,0,3,0,0,0,0,3,3,0,0,0,0,3,0,1},
             {1,0,3,0,0,8,0,3,3,0,0,8,0,3,0,1},
             {1,0,3,0,0,0,0,3,3,0,0,0,0,3,0,1},
-            {1,0,3,0,8,0,0,3,3,0,0,0,0,3,0,1},
+            {1,0,3,0,8,0,0,3,3,0,19,20,0,3,0,1},
             {1,0,3,4,4,4,4,4,4,4,4,4,4,3,0,1},
-            {1,0,0,0,0,0,0,19,20,0,0,0,0,0,0,1},
+            {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
             {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
 
     };
@@ -66,7 +66,7 @@ public class GamePaneImage extends Pane {
     /**
      * constructor class to initialize playerPosition , player Image , map Image , map Location , map Logic
      */
-    public GamePaneImage() {
+    public GamePane() {
 
         setImgLeft();
         setImgDown();
@@ -115,8 +115,8 @@ public class GamePaneImage extends Pane {
         bmap[8][14] = new Mall();
         bmap[7][14] = new Mall();
         bmap[9][14] = new Mall();
-        bmap[16][7] = new Travel();
-        bmap[16][8] = new Travel();
+        bmap[14][11] = new Travel();
+        bmap[14][10] = new Travel();
     }
 
     // set player when start game //
@@ -126,7 +126,7 @@ public class GamePaneImage extends Pane {
      *
      */
 
-    public GamePaneImage(String avatarPath){
+    public GamePane(String avatarPath){
         this();
         if(avatarPath != null){
             playerImage.setImage(imgDown);

@@ -1,6 +1,6 @@
 package Screen.BuildingScreen;
 
-import Logic.GamePaneImage;
+import Logic.GamePane;
 
 /**
  * Represents an item or action that can be shown as a button in a shop-style popup.
@@ -25,5 +25,5 @@ public interface ShopItem {
     /**
      * Runs the item action
      */
-    void execute(GamePaneImage gamePane); // Action เมื่อกดซื้อ
+    void execute(GamePane gamePane); // Action เมื่อกดซื้อ
 }

@@ -407,7 +407,7 @@ class Screen.BuildingScreen.Restaurant.Restaurant {
 + void interact(GamePaneImage)
 }
 
-class Logic.GamePaneImage {
+class Logic.GamePane {
 - MapCreate MapCreate
 - int TILE_SIZE
 - boolean[][] clickable
@@ -566,7 +566,7 @@ Screen.Result.StackPane <|-- Screen.Result.ResultScreen
 Screen.UI.VBox <|-- Screen.UI.TitleScreen
 Screen.Game.VBox <|-- Screen.Game.GameScreen
 Screen.BuildingScreen.Building <|-- Screen.BuildingScreen.Restaurant.Restaurant
-javafx.scene.layout.Pane <|-- Logic.GamePaneImage
+javafx.scene.layout.Pane <|-- Logic.GamePane
 Screen.BuildingScreen.Building <|-- Screen.BuildingScreen.Mall.Mall
 Item.EducationThing <|-- Item.Book4
 Item.EducationThing <|-- Item.Book1

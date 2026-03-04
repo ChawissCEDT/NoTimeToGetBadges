@@ -1,6 +1,6 @@
 package Screen.BuildingScreen.Restaurant;
 
-import Logic.GamePaneImage;
+import Logic.GamePane;
 import Screen.BuildingScreen.ShopItem;
 import Character.BasePlayer;
 import Screen.BuildingScreen.Normal;
@@ -65,7 +65,7 @@ public class RestaurantPopup implements Shopable, Normal {
          * Applies the food effect to the player (cost money, gain stamina/health).
          */
         @Override
-        public void execute(GamePaneImage gamePane) {
+        public void execute(GamePane gamePane) {
             BasePlayer p = gamePane.getPlayerImage();
             p.setStamina((int)p.getStamina() + staminaGain);
             p.setHealth((int)p.getHealth() + healthGain);
@@ -76,7 +76,7 @@ public class RestaurantPopup implements Shopable, Normal {
     /**
      * Opens the Restaurant popup window and allows the player to purchase a food.
      */
-    public static void show(GamePaneImage gamePane) {
+    public static void show(GamePane gamePane) {
         BasePlayer p = gamePane.getPlayerImage();
 
         RestaurantPopup popup = new RestaurantPopup();
