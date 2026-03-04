@@ -1,6 +1,6 @@
 package Screen.BuildingScreen;
 
-import Logic.GamePaneImage;
+import Logic.GamePane;
 import javafx.scene.control.Button;
 import Character.BasePlayer;
 
@@ -13,7 +13,7 @@ public interface Shopable extends Normal {
      * Creates a button for a {@link ShopItem}. When clicked, it checks the player's money and
      * check if the player can afford it.
      */
-    default Button createShopButton(ShopItem item, GamePaneImage gamePane, Runnable refreshUI) {
+    default Button createShopButton(ShopItem item, GamePane gamePane, Runnable refreshUI) {
         BasePlayer p = gamePane.getPlayerImage();
         String buttonText = (item.getPrice() > 0)
                 ? item.getName() + "\n$" + item.getPrice()

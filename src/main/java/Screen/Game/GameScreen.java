@@ -1,7 +1,7 @@
 package Screen.Game;
 
 import Character.BasePlayer;
-import Logic.GamePaneImage;
+import Logic.GamePane;
 import Logic.GameSession;
 import Screen.BuildingScreen.Building;
 import Screen.BuildingScreen.Gym.GymPopup;
@@ -51,7 +51,7 @@ public class GameScreen extends VBox {
         mainArea.getRowConstraints().add(row);
 
         // GamePane (map)
-        GamePaneImage gamePane = new GamePaneImage(GameSession.getPlayer() != null ? GameSession.getPlayer().getImagePath() : null);
+        GamePane gamePane = new GamePane(GameSession.getPlayer() != null ? GameSession.getPlayer().getImagePath() : null);
 
         // Status
         VBox statusArea = new VBox();
@@ -93,7 +93,7 @@ public class GameScreen extends VBox {
     /**
      * Control Screen when logic is active
      */
-    private void handleEndRound(ScreenManager game, Gamebar topbar, GamePaneImage gamePane, StatusTab statusTab){
+    private void handleEndRound(ScreenManager game, Gamebar topbar, GamePane gamePane, StatusTab statusTab){
         BasePlayer player = GameSession.getPlayer();
         if(player == null) return;
 

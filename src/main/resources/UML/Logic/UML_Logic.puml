@@ -1,5 +1,5 @@
 @startuml
-class Logic.GamePaneImage {
+class Logic.GamePane {
 - MapCreate MapCreate
 - int TILE_SIZE
 - boolean[][] clickable
@@ -89,5 +89,5 @@ class Logic.MapCreate {
 
 
 
-javafx.scene.layout.Pane <|-- Logic.GamePaneImage
+javafx.scene.layout.Pane <|-- Logic.GamePane
 @enduml

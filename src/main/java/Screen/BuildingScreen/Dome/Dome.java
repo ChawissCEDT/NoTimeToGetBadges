@@ -1,6 +1,6 @@
 package Screen.BuildingScreen.Dome;
 
-import Logic.GamePaneImage;
+import Logic.GamePane;
 import Screen.BuildingScreen.Building;
 
 
@@ -21,7 +21,7 @@ public class Dome extends Building {
      * Opens the Dome popup screen.
      */
     @Override
-    public void interact(GamePaneImage gamePane) {
+    public void interact(GamePane gamePane) {
         DomePopup.show(gamePane);
     }
 }

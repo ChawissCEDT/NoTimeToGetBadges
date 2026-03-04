@@ -1,6 +1,6 @@
 package Screen.BuildingScreen.Park;
 
-import Logic.GamePaneImage;
+import Logic.GamePane;
 import Screen.BuildingScreen.Building;
 
 /**
@@ -20,7 +20,7 @@ public class Park extends Building {
      * Opens the Park popup screen.
      */
     @Override
-    public void interact(GamePaneImage gamePane) {
+    public void interact(GamePane gamePane) {
         ParkPopup.show(gamePane);
     }
 }

@@ -1,7 +1,7 @@
 package Screen.BuildingScreen.Park;
 
 
-import Logic.GamePaneImage;
+import Logic.GamePane;
 import Screen.BuildingScreen.Normal;
 import Screen.BuildingScreen.ShopItem;
 import Screen.BuildingScreen.Shopable;
@@ -67,7 +67,7 @@ public class ParkPopup implements Shopable, Normal {
          * Applies the selected park action to the player.
          */
         @Override
-        public void execute(GamePaneImage gamePane) {
+        public void execute(GamePane gamePane) {
             BasePlayer p = gamePane.getPlayerImage();
 
             if (p.getStamina() >= staminaCost) {
@@ -81,7 +81,7 @@ public class ParkPopup implements Shopable, Normal {
     /**
      * Opens the park popup window and allows the player to walk or relax.
      */
-    public static void show(GamePaneImage gamePane) {
+    public static void show(GamePane gamePane) {
         BasePlayer p = gamePane.getPlayerImage();
 
         ParkPopup popup = new ParkPopup();
