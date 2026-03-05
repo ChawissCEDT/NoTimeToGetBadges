@@ -2,6 +2,6 @@
 
 Location file
 
-- JavaDocs in Package JavaDocs (index.html)
+- JavaDocs file in Package JavaDocs (index.html)
 - jar file in build/libs/NoTimeToGetBadge-1-with-sources.jar
 - UML file in src/main/resources/UML
