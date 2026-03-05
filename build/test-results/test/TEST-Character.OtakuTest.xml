@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Character.OtakuTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-03-04T14:39:16.655Z" hostname="BAILSE" time="0.059">
+  <properties/>
+  <testcase name="constructorSetsExpectedBaselineStats()" classname="Character.OtakuTest" time="0.029"/>
+  <testcase name="imagesAndImagePathArePresent()" classname="Character.OtakuTest" time="0.029"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
